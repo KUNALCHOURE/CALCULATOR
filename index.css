@@ -23,3 +23,19 @@ div{
     margin: 20px;
     background-color: grey;
 }
+.lower{
+    display: flex;
+    justify-content: center;
+}
+.buttons{
+    height: 400px;
+    width: 350px;
+    display:grid;
+    grid-template-rows: 100px 100px 100px 100px 100px ;
+    grid-template-columns: 70px 70px 70px 70px ;
+}
+
+.buttons div{
+    background-color: orange;
+  
+}
