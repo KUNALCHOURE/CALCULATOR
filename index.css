@@ -32,10 +32,12 @@ div{
     width: 350px;
     display:grid;
     grid-template-rows: 100px 100px 100px 100px 100px ;
-    grid-template-columns: 70px 70px 70px 70px ;
+    grid-template-columns: 90px 90px 90px 90px ;
+    margin-top: 10px;
 }
 
 .buttons div{
+    margin: 10px;
     background-color: orange;
   
 }
