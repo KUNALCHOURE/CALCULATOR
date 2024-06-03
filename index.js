@@ -41,10 +41,12 @@ for(let b of btn){
             
         }
         else{
-           let ans= calculate(previnput,currentinput,operator);
+           let ans=calculate(previnput,currentinput,operator);
            displayval=ans;
+           console.log(displayval)
            display(displayval);
-           clear();
+
+           
         }
 
 
@@ -75,35 +77,35 @@ function clear(){
 
 //function to calculate 
 function calculate(a,b,op){
-if(previnput!=="" && currentinput!=="")
+if(a!=="" && b!=="")
     {
-        let a1=parseFloat(previnput);
-        let b1=parseFloat(currentinput);
+        let a1=parseFloat(a);
+        let b1=parseFloat(b);
         let result;
         
     switch(op){
 
         case '+':
-            result=a1+b1;
+            return a1+b1;
             break;
 
         case '-':
-            result=a1-b1;
+            return a1-b1;
             break;
 
         case '*':
-            result=a1*b1;
+            return a1*b1;
             break;
     
          case '/':
-            result=a1/b1;
+            return a1/b1;
             break;
         
         case '%':
-            result=a1/100;
+            return a1/100;
             break;
         default:
-            return;
+            return 0;
 
     
     }
