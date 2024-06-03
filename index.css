@@ -9,7 +9,7 @@ div{
    justify-content: center;
 }
 .container{
-    height: 600px;
+    height: 700px;
     width: 400px;
     background-color: black;
     border-radius: 5px;
@@ -21,7 +21,9 @@ div{
     height: 120px;
     width: 350px;
     margin: 20px;
-    background-color: grey;
+
+    background-color: #1e2126; 
+    color: #ffffff;
 }
 .lower{
     display: flex;
@@ -36,8 +38,13 @@ div{
     margin-top: 10px;
 }
 
-.buttons div{
+.button{
     margin: 10px;
-    background-color: orange;
+    background-color: #61dafb;
+    color: #282c34; 
   
 }
+.button:hover {
+    background-color: #21a1f1; /* Darker blue on hover */
+}
+
