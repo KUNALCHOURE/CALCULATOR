@@ -40,6 +40,12 @@ for(let b of btn){
             display(displayval);
             
         }
+        else{
+           let ans= calculate(previnput,currentinput,operator);
+           displayval=ans;
+           display(displayval);
+           clear();
+        }
 
 
     })
@@ -53,7 +59,7 @@ function display(val){
 
 //function to check wheather input is operator or not
 function isoperator(value){
-    if(value === '+' || value === '-' || value === '*' || value === '/'){
+    if(value === '+' || value === '-' || value === '*' || value === '/' ||value === '%' ){
         return true;
     }
     else return false;
@@ -65,4 +71,42 @@ function clear(){
     previnput="";
     operator=null;
     display("");
+}
+
+//function to calculate 
+function calculate(a,b,op){
+if(previnput!=="" && currentinput!=="")
+    {
+        let a1=parseFloat(previnput);
+        let b1=parseFloat(currentinput);
+        let result;
+        
+    switch(op){
+
+        case '+':
+            result=a1+b1;
+            break;
+
+        case '-':
+            result=a1-b1;
+            break;
+
+        case '*':
+            result=a1*b1;
+            break;
+    
+         case '/':
+            result=a1/b1;
+            break;
+        
+        case '%':
+            result=a1/100;
+            break;
+        default:
+            return;
+
+    
+    }
+
+}
 }
