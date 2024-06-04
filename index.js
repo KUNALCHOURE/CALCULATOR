@@ -71,6 +71,7 @@ function isoperator(value){
 function clear(){
     currentinput="";
     previnput="";
+    displayval=""
     operator=null;
     display("");
 }
