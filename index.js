@@ -77,39 +77,42 @@ function clear(){
 }
 
 //function to calculate 
-function calculate(a,b,op){
-if(a!=="" && b!=="")
-    {
-        let a1=parseFloat(a);
-        let b1=parseFloat(b);
-        let result;
-        
-    switch(op){
-
+function calculate(a, b, op) {
+    if (a !== "" && b !== "") {
+      let a1 = parseFloat(a);
+      let b1 = parseFloat(b);
+      let result;
+  
+      switch (op) {
         case '+':
-            return a1+b1;
-            break;
-
+          return a1 + b1;
+          break;
+  
         case '-':
-            return a1-b1;
-            break;
-
+          return a1 - b1;
+          break;
+  
         case '*':
-            return a1*b1;
-            break;
-    
-         case '/':
-            return a1/b1;
-            break;
-        
+          return a1 * b1;
+          break;
+  
+        case '/':
+          if (b1 === 0) {
+            return "Error: Division by zero";
+          }
+          return a1 / b1;
+          break;
+  
         case '%':
-            return a1/100;
-            break;
+          // Corrected modulo operation: remainder after division
+          return a1 % b1;
+          break;
+  
         default:
-            return 0;
-
-    
+          return "Error: Invalid operator";
+      }
+    } else {
+      return "Error: Empty operands";
     }
-
-}
-}
+  }
+  
