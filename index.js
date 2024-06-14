@@ -1,5 +1,6 @@
 let btn=document.querySelectorAll("button");
 let dis=document.querySelector(".upper");
+let c=document.getElementById("head");
 let currentinput="";
 let previnput="";
 let displayval="";
@@ -159,4 +160,9 @@ function calculate(a, b, op) {
       return "Error: Empty operands";
     }
   }
+
+  c.addEventListener("click",function(){
+    location.reload()     //it is used o refresh the page
+    
+  })
   

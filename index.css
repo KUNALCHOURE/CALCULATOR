@@ -4,6 +4,9 @@ div{
 .header{
     text-align: center;
 }
+#head:hover{
+    cursor: pointer;
+}
 .main{
     display: flex;
    justify-content: center;
