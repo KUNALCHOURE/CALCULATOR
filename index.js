@@ -53,6 +53,50 @@ for(let b of btn){
     })
 }
 
+document.addEventListener("keydown",(event)=>{
+  const val=event.key;
+
+  if(!isNaN(val)){
+      currentinput+=val;
+      displayval+=val;
+      display(displayval);
+  }
+  else if(isoperator(val)){
+      console.log("value checked");
+      if(currentinput===" " && val==="-"){
+          currentinput="-";
+          displayval+='-';
+          display(displayval);
+      }
+      else{
+          previnput=currentinput;
+          currentinput="";
+          operator=val;
+          displayval+=val;
+           display(displayval);
+      }
+  }
+  else if(val==='Escape'){
+      clear();
+
+  }
+  else if(val==='Backspace'){
+      console.log("Backspace");
+      displayval=displayval.slice(0,-1);
+    
+      display(displayval);
+      
+  }
+  else{
+     let ans=calculate(previnput,currentinput,operator);
+     displayval=ans;
+     console.log(displayval)
+     display(displayval);
+
+     
+  }
+
+})
 
 function display(val){
     dis.value=val;
