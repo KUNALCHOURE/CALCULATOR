@@ -1,3 +1,6 @@
+body{
+    background: linear-gradient(135deg, #f3e7e9, #e3eeff);
+}
 div{
     border: black;
 }
@@ -13,7 +16,7 @@ div{
 }
 
 .container{
-    height: 700px;
+    height: 620px;
     width: 400px;
     background-color: #1c1c1c;
     border-radius: 5px;
@@ -43,8 +46,7 @@ div{
     height: 400px;
     width: 350px;
     display:grid;
-    grid-template-rows: 100px 100px 100px 100px 100px ;
-    grid-template-columns: 90px 90px 90px 90px ;
+    grid-template-columns: repeat(4, 1fr);
     margin-top: 10px;
 }
 
@@ -61,4 +63,6 @@ div{
         background-color: #444444; 
         box-shadow: 0 0 5px white;
 }
+
+
 
