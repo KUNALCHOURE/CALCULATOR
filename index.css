@@ -4,6 +4,9 @@ body{
 div{
     border: black;
 }
+head{
+    font-family: Arial, Helvetica, sans-serif;
+}
 .header{
     text-align: center;
 }
