@@ -149,7 +149,7 @@ function calculate(a, b, op) {
           break;
   
         case '%':
-          // Corrected modulo operation: remainder after division
+         
           return a1 % b1;
           break;
   
