@@ -88,11 +88,13 @@ document.addEventListener("keydown",(event)=>{
       display(displayval);
       
   }
-  else{
+  else if(val=="Enter"){
      let ans=calculate(previnput,currentinput,operator);
      displayval=ans;
-     console.log(displayval)
      display(displayval);
+     currentinput=ans;
+    previnput="";
+    operator=null;
 
      
   }
@@ -156,9 +158,7 @@ function calculate(a, b, op) {
         default:
           return "Error: Invalid operator";
       }
-    } else {
-      return "Error: Empty operands";
-    }
+    } 
   }
 
   c.addEventListener("click",function(){
