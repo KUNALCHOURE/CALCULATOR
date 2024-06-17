@@ -21,8 +21,3 @@ This project is a simple, yet powerful calculator designed for basic arithmetic 
 - **Keyboard Input Support**: Allows for quick and efficient data entry using the keyboard.
 - **Error Handling**: Displays error messages for invalid operations, such as division by zero.
 
-## Screenshot
-![Calculator Screenshot](./CALCULATOR.png)
-
-## Access the Calculator
-You can use the calculator by visiting the following link: [Calculator Project](https://yourgithubusername.github.io/calculator-project/)
