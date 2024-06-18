@@ -70,11 +70,20 @@ document.addEventListener("keydown",(event)=>{
           display(displayval);
       }
       else{
-          previnput=currentinput;
+          
+        if(operator && currentinput){  // if operator and currentinput is there already
+          previnput=calculate(previnput,currentinput,operator);
+          displayval=previnput;
+          display(displayval);
           currentinput="";
-          operator=val;
-          displayval+=val;
-           display(displayval);
+        }
+        else {
+          previnput = currentinput;
+          currentinput = "";
+      }
+      operator = val;
+      displayval += val;
+      display(displayval);
       }
   }
   else if(val==='Escape'){
