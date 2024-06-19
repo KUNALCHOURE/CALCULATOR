@@ -21,3 +21,15 @@ This project is a simple, yet powerful calculator designed for basic arithmetic 
 - **Keyboard Input Support**: Allows for quick and efficient data entry using the keyboard.
 - **Error Handling**: Displays error messages for invalid operations, such as division by zero.
 
+
+
+## Usage
+- Click the buttons or use your keyboard to enter numbers and operators.
+- Click `=` or press `Enter` to perform the calculation.
+- Click `AC` or press `Escape` to clear the display.
+- Click `DEL` or press `Backspace` to delete the last entered digit or operator.
+
+
+
+
+
