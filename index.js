@@ -5,7 +5,7 @@ let currentinput="";
 let previnput="";
 let displayval="";
 let operator =null;
-console.dir(dis);
+
 for(let b of btn){
     b.addEventListener("click",function(){
         const val=b.textContent;
@@ -35,7 +35,7 @@ for(let b of btn){
 
         }
         else if(val==='DEL'){
-            console.log("del");
+            
             displayval=displayval.slice(0,-1);
           
             display(displayval);
@@ -64,7 +64,7 @@ document.addEventListener("keydown",(event)=>{
   }
   else if(isoperator(val)){
       console.log("value checked");
-      if(currentinput===" " && val==="-"){
+      if(currentinput==="" && val==="-"){
           currentinput="-";
           displayval+='-';
           display(displayval);
