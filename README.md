@@ -30,6 +30,12 @@ This project is a simple, yet powerful calculator designed for basic arithmetic 
 - Click `DEL` or press `Backspace` to delete the last entered digit or operator.
 
 
+## Screenshots
+Here are some screenshots of the calculator in action:
+![Screenshot 2024-06-23 200600](https://github.com/KUNALCHOURE/ENCRYPRTIX_TASK3-CALCULATOR/assets/147177836/fdbf9f20-97b9-4210-97ba-7052fd7b478d)
+
+
+
 
 
 
